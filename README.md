@@ -1,2 +1,2 @@
-# database
-The code/SQL to create the Seagull databases
+# Database
+This is the simple SQL for creating Seagull's database tables. This SQL is designed for mySQL.
