@@ -43,3 +43,14 @@ CREATE TABLE `tags` (
   PRIMARY KEY (`id`),
   UNIQUE KEY `id_UNIQUE` (`id`)
 ) ENGINE=InnoDB AUTO_INCREMENT=112 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+
+-- USERLINKS
+CREATE TABLE `userLinks` (
+  `id` int NOT NULL AUTO_INCREMENT,
+  `userId` varchar(255) NOT NULL,
+  `value` varchar(255) NOT NULL,
+  `secure` tinyint NOT NULL DEFAULT '0',
+  `verified` tinyint NOT NULL DEFAULT '0',
+  PRIMARY KEY (`id`),
+  UNIQUE KEY `id_UNIQUE` (`id`)
+) ENGINE=InnoDB AUTO_INCREMENT=4 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
